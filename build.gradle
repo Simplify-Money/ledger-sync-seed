@@ -6,9 +6,8 @@ plugins {
 group = 'in.simplifymoney'
 version = '0.1.0'
 
-java {
-    toolchain { languageVersion = JavaLanguageVersion.of(21) }
-}
+// Builds and runs on any JDK 17 or newer (17 and 21 both tested).
+tasks.withType(JavaCompile).configureEach { options.release = 17 }
 
 repositories { mavenCentral() }
 

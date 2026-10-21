@@ -117,7 +117,7 @@ src/main/java/in/simplifymoney/ledgersync/
   SelfCheck.java
 ```
 
-Run it:
+Run it (needs a JDK, version 17 or newer — 17 and 21 both work; nothing else to install):
 
 ```bash
 ./verify.sh                      # compile + run the pipeline, no network needed
